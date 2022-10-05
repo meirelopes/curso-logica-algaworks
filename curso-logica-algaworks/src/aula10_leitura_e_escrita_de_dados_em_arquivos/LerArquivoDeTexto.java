@@ -1,4 +1,4 @@
-package arquivos_de_texto;
+package aula10_leitura_e_escrita_de_dados_em_arquivos;
 
 import java.io.IOException;
 import java.nio.file.Files;

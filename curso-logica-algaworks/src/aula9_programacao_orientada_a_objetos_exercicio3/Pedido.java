@@ -1,9 +1,10 @@
-package programacao_orientada_a_objetos_exercicio2;
+package aula9_programacao_orientada_a_objetos_exercicio3;
 
 public class Pedido {
 	private int codigo;
 	private double subtotal;
 	private double desconto;
+	private double total;
 	
 	
 	
@@ -31,7 +32,7 @@ public class Pedido {
 		this.desconto = desconto;
 	}
 	public double getTotal() {
-		double total = this.subtotal - this.desconto;
+		this.total = this.subtotal - this.desconto;
 		return total;
 	}
 	

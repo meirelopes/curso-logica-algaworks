@@ -3,20 +3,33 @@ package aula9_programacao_orientada_a_objetos_exercicio1;
 public class Main {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		Produto produto1= new Produto();
+		/*
+		 * Crie um programa que contenha um método que verifique a necessidade de repor
+		 * o estoque de determinado produto em uma loja qualquer. Considere que a
+		 * quantidade mínima de um produto deva ser 10. Se o estoque for menor que isso,
+		 * então ele retornará *true*, pois, será necessária a reposição do estoque,
+		 * caso contrário, ele retornará false.
+		 * Como parâmetro, esse método deverá receber um tipo que você irá criar e
+		 * chamar de Produto, ou seja, você vai criar uma classe chamada Produto com os
+		 * atributos necessários. Os atributos da classe serão nome e quantidadeEstoque.
+		 * Feito isso, implemente o método main do programa. Nele você vai criar uma
+		 * variável do tipo Produto e depois usar essa variável para invocar o método
+		 * que valida a necessidade de reposição de estoque.
+		 * No final, você vai exibir, no console, se é necessária a reposição ou não.
+		 */
+
+		Produto produto1 = new Produto();
 		produto1.nome = "Celular";
 		produto1.quantidadeEstoque = 15;
-		Produto produto2= new Produto();
-
+		Produto produto2 = new Produto();
 		produto2.nome = "Celular2";
 		produto2.quantidadeEstoque = 9;
-
+		System.out.println(verificarEstoque(produto1));
 		System.out.println(verificarEstoque(produto2));
 	}
-	
+
 	public static Boolean verificarEstoque(Produto produto) {
-		Boolean quantidadeMinima = produto.quantidadeEstoque<10;
+		Boolean quantidadeMinima = produto.quantidadeEstoque < 10;
 		return quantidadeMinima;
 
 	}

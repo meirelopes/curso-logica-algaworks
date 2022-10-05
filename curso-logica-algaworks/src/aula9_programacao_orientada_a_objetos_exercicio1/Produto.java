@@ -4,8 +4,4 @@ public class Produto {
 	String nome;
 	Integer quantidadeEstoque;
 	
-	public Boolean verificarEstoque() {
-		Boolean quantidadeMinima = this.quantidadeEstoque<10;
-		return quantidadeMinima;
-	}
 }
